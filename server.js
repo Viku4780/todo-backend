@@ -6,6 +6,8 @@ import express from "express";
 import todoRoutes from "./Routes/todo.routes.js";
 import cors from 'cors';
 
+console.log("🔍 MONGO_URI from env:", process.env.MONGO_URI);
+
 connectDb();
 
 const app = express();
