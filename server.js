@@ -1,10 +1,11 @@
-import express from "express";
-import { connectDb } from "./config/db.js";
 import dotenv from "dotenv";
+dotenv.config();
+
+import { connectDb } from "./config/db.js";
+import express from "express";
 import todoRoutes from "./Routes/todo.routes.js";
 import cors from 'cors';
 
-dotenv.config();
 connectDb();
 
 const app = express();
