@@ -15,7 +15,7 @@ const app = express();
 app.use(express.json());
 app.use(
   cors({
-    origin: "https://your-frontend-url.up.railway.app", // ✅ change this to your actual frontend URL or "*" for now
+    origin: "https://todo-app-n9p5.vercel.app/", // ✅ change this to your actual frontend URL or "*" for now
     credentials: true,
   })
 );
